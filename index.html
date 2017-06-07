@@ -1,0 +1,44 @@
+<html>
+
+  <body ng-app="demo">
+    <p><a href="#/">main</a></p>
+
+    <a href="#user">user</a>
+    <a href="#albums">albums</a>
+    <a href="#post">post</a>
+    <div ng-view></div>
+
+    <div ng-controller="todos">
+      <ul>
+	<li ng-repeat="todo in todos" ng-if="todo.userId == 1"> {{ todo.title }}</li>
+      </ul>
+    </div>
+    <div>
+      <p>asdasdasd</p>
+      <p>asdasdasd</p>
+      <p>asdasdasd</p>
+      <p>asdasdasd</p>
+      <p>asdasdasd</p>
+    </div>
+    <div ng-controller="comments">
+      <p>{{comments}}</p>
+    </div>
+
+    <div ng-controller="albums">
+      <p>{{albums}}</p>
+    </div>
+
+    <div ng-controller="photos">
+      <p>{{photosphotos}}</p>
+    </div>
+
+    <div ng-controller="todos">
+      <p>{{todos}}</p>
+    </div>
+
+    <div ng-controller="users">
+      <p>{{users}}</p>
+    </div>
+
+  </body>
+  </html>
