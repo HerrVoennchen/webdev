@@ -1,19 +1,5 @@
-var app = angular.module('demo', ["ngRoute"]);
-app.config(function($routeProvider) {
-    $routeProvider
-	.when("/", {
-	    templateUrl : "main.htm"
-	})
-	.when("/user", {
-	    templateUrl : "user.htm"
-	})
-	.when("/albums", {
-	    templateUrl : "albums.htm"
-	})
-	.when("/post", {
-	    templateUrl : "post.htm"
-	});
-});
+var app = angular.module('demo', []);
+
 app.controller('comments', function($scope, $http) {
     $http.get('https://jsonplaceholder.typicode.com/comments').
 	then(function(response){
@@ -39,9 +25,12 @@ app.controller('todos', function($scope, $http) {
 	});
 });
 app.controller('users', function($scope, $http) {
+  $scope.sortType     = 'name'; // set the default sort type
+$scope.sortReverse  = false;  // set the default sort order
+$scope.searchUser   = '';     // set the default search/filter term
+
     $http.get('https://jsonplaceholder.typicode.com/users').
 	then(function(response){
 	    $scope.users = response.data;
 	});
 });
-
