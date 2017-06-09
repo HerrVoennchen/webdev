@@ -1,3 +1,14 @@
+require('bootstrap/dist/css/bootstrap.min.css');
+require('bootstrap/dist/css/bootstrap-theme.min.css');
+require('font-awesome/css/font-awesome.min.css');
+
+require('jquery');
+require('bootstrap');
+
+var angular = require('angular');
+require('angular-route');
+
+
 var app = angular.module('demo', []);
 
 app.controller('comments', function($scope, $http) {

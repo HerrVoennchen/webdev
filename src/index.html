@@ -1,4 +1,6 @@
-<div ng-app="dataFetcher">
+<html>
+
+<body ng-app="demo">
   <div class="container" ng-controller="users">
 
 
@@ -21,38 +23,38 @@
         <tr>
           <td>
             <a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse">
-          Name
-          <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
-          <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
-        </a>
+            Name
+            <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
           </td>
           <td>
             <a href="#" ng-click="sortType = 'email'; sortReverse = !sortReverse">
-          Email
-          <span ng-show="sortType == 'email' && !sortReverse" class="fa fa-caret-down"></span>
-          <span ng-show="sortType == 'email' && sortReverse" class="fa fa-caret-up"></span>
-        </a>
+            Email
+            <span ng-show="sortType == 'email' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'email' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
           </td>
           <td>
             <a href="#" ng-click="sortType = 'phone'; sortReverse = !sortReverse">
-          Phone
-          <span ng-show="sortType == 'phone' && !sortReverse" class="fa fa-caret-down"></span>
-          <span ng-show="sortType == 'phone' && sortReverse" class="fa fa-caret-up"></span>
-        </a>
+            Phone
+            <span ng-show="sortType == 'phone' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'phone' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
           </td>
           <td>
             <a href="#" ng-click="sortType = 'adress'; sortReverse = !sortReverse">
-                    Adress
-                    <span ng-show="sortType == 'adress' && !sortReverse" class="fa fa-caret-down"></span>
-                    <span ng-show="sortType == 'adress' && sortReverse" class="fa fa-caret-up"></span>
-                  </a>
+                      Adress
+                      <span ng-show="sortType == 'adress' && !sortReverse" class="fa fa-caret-down"></span>
+                      <span ng-show="sortType == 'adress' && sortReverse" class="fa fa-caret-up"></span>
+                    </a>
           </td>
           <td>
             <a href="#" ng-click="sortType = 'company.name'; sortReverse = !sortReverse">
-          Company
-          <span ng-show="sortType == 'company.name' && !sortReverse" class="fa fa-caret-down"></span>
-          <span ng-show="sortType == 'company.name' && sortReverse" class="fa fa-caret-up"></span>
-        </a>
+            Company
+            <span ng-show="sortType == 'company.name' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'company.name' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
           </td>
 
         </tr>
@@ -73,4 +75,12 @@
       </tbody>
     </table>
   </div>
-</div>
+
+</body>
+
+
+<p class="text-center">
+  by <a href="http://optimal-systems.com" target="_blank">Richard Glander [OPTIMAL SYSTEMS]</a>
+</p>
+
+</html>
