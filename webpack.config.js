@@ -12,19 +12,8 @@ module.exports = {
 	context: __dirname,
 	devtool: 'source-map',
 	entry: {
-		app: ['./src/app.js'],
-		vendor: [
-			'react',
-			'react-dom',
-			'react-redux',
-			'axios',
-			'classnames',
-			'redux',
-			'redux-logger',
-			'redux-promise-middleware',
-			'redux-thunk',
-			'toastr'
-		]
+		app: ['./src/js/App.jsx'],
+		vendor: ['react', 'react-dom', 'axios', 'classnames', 'lodash']
 	},
 	output: {
 		path: path.resolve(__dirname, 'src'),
