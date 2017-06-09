@@ -1,4 +1,4 @@
-var app = angular.module('demo', []);
+var app = angular.module('dataFetcher', []);
 
 app.controller('comments', function($scope, $http) {
     $http.get('https://jsonplaceholder.typicode.com/comments').
@@ -24,13 +24,12 @@ app.controller('todos', function($scope, $http) {
 	    $scope.todos = response.data;
 	});
 });
-app.controller('users', function($scope, $http) {
+app.controller('usersCtrl', function($scope, $http) {
   $scope.sortType     = 'name'; // set the default sort type
 $scope.sortReverse  = false;  // set the default sort order
 $scope.searchUser   = '';     // set the default search/filter term
-
     $http.get('https://jsonplaceholder.typicode.com/users').
 	then(function(response){
-	    $scope.users = response.data;
+	    $scope.users = response.data ;
 	});
 });
